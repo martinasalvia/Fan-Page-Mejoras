@@ -322,9 +322,9 @@
 
    <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const hash = window.location.hash; // ej: "#ross"
+  const hash = window.location.hash; 
   if (hash) {
-    const temporada = hash.substring(1); // "ross"
+    const temporada = hash.substring(1); 
     const modal = document.getElementById('modal-' + temporada);
     if (modal) {
       modal.classList.add('show');
@@ -334,4 +334,5 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 </body>
+
 </html>
