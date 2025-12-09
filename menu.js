@@ -28,10 +28,11 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-// Opcional: cerrar al hacer clic en un enlace del menú
+// Cerrar al hacer clic en un enlace del menú
 navUl.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navUl.classList.remove('activo');
     document.body.style.overflow = '';
   });
+
 });
