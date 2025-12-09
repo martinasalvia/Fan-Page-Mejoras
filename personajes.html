@@ -256,9 +256,9 @@
 
    <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const hash = window.location.hash; // ej: "#ross"
+  const hash = window.location.hash; 
   if (hash) {
-    const personaje = hash.substring(1); // "ross"
+    const personaje = hash.substring(1); 
     const modal = document.getElementById('modal-' + personaje);
     if (modal) {
       modal.classList.add('show');
@@ -271,4 +271,5 @@ document.addEventListener('DOMContentLoaded', () => {
 <script src="menu.js"></script>
 
 </body>
+
 </html>
