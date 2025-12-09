@@ -3,7 +3,7 @@ function openModal(id) {
   const modal = document.getElementById('modal-' + id);
   if (modal) {
     modal.classList.add('show');
-    document.body.style.overflow = 'hidden'; // opcional: bloquea scroll del fondo
+    document.body.style.overflow = 'hidden'; // bloquea scroll del fondo
   }
 }
 
@@ -36,3 +36,4 @@ window.addEventListener('keydown', function(event) {
     document.body.style.overflow = '';
   }
 });
+
