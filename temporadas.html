@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporadas - Friends Fan Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menú superior -->
+<header>
+  <div class="logo">Friends Fan Page</div>
+  <button class="menu-btn" aria-label="Abrir menú">☰</button>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="temporadas.html" class="active">Temporadas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Temporadas de Friends</h1>
+    <p>Revive los mejores momentos de cada temporada.</p>
+  </section>
+
+  <!-- Tarjetas de temporadas -->
+  <section class="temporadas-scroll">
+    <h2>Temporadas</h2>
+    <div class="cards-container">
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp1')"><img src="img/temporada1.jpg"><h3>Temporada 1</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp2')"><img src="img/temporada2.jpg"><h3>Temporada 2</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp3')"><img src="img/temporada3.jpg"><h3>Temporada 3</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp4')"><img src="img/temporada4.jpg"><h3>Temporada 4</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp5')"><img src="img/temporada5.jpg"><h3>Temporada 5</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp6')"><img src="img/temporada6.jpg"><h3>Temporada 6</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp7')"><img src="img/temporada7.jpg"><h3>Temporada 7</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp8')"><img src="img/temporada8.jpg"><h3>Temporada 8</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp9')"><img src="img/temporada9.jpg"><h3>Temporada 9</h3></a></div>
+      <div class="card"><a href="javascript:void(0)" onclick="openModal('temp10')"><img src="img/temporada10.jpg"><h3>Temporada 10</h3></a></div>
+    </div>
+    <p class="nota">Tocá en cada tarjeta para ver la línea de tiempo de momentos icónicos.</p>
+  </section>
+
+<!-- Modales de temporadas -->
+<!-- Temporada 1 -->
+<div id="modal-temp1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp1')">&times;</span>
+    <h2>Temporada 1</h2>
+    <p>Presentación de los seis amigos y sus primeras aventuras.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 1</span><p>Rachel deja a Barry en el altar.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 7</span><p>Ross descubre que Carol está embarazada.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Ross corre al aeropuerto para detener a Rachel.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/ogzxSDZohVo" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 2 -->
+<div id="modal-temp2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp2')">&times;</span>
+    <h2>Temporada 2</h2>
+    <p>Profundiza en las relaciones y trae momentos inolvidables.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 3</span><p>Joey consigue un papel en "Days of Our Lives".</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 12</span><p>Ross y Rachel finalmente se besan.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Chandler vuelve con Janice.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/TR5rYwU93bQ" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 3 -->
+<div id="modal-temp3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp3')">&times;</span>
+    <h2>Temporada 3</h2>
+    <p>Conflictos amorosos y momentos icónicos.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 9</span><p>Ross y Rachel discuten por celos.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 15</span><p>Joey compra un pato y un pollito.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Rachel y Ross terminan su relación.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/bYG1aBU9cI4" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 4 -->
+<div id="modal-temp4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp4')">&times;</span>
+    <h2>Temporada 4</h2>
+    <p>Grandes cambios en las relaciones.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 1</span><p>Ross empieza a salir con Emily.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 12</span><p>Monica y Chandler se acercan.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Ross dice “Rachel” en el altar.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/4FSKz0-a-qQ" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 5 -->
+<div id="modal-temp5" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp5')">&times;</span>
+    <h2>Temporada 5</h2>
+    <p>Relación secreta de Monica y Chandler.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 2</span><p>El grupo descubre la relación de Monica y Chandler.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 8</span><p>Ross se muda con Joey y Chandler.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Ross se casa con Emily.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/L81XWiDgmTk" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 6 -->
+<div id="modal-temp6" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp6')">&times;</span>
+    <h2>Temporada 6</h2>
+    <p>Monica y Chandler consolidan su relación, mientras Ross enfrenta las consecuencias de su matrimonio fallido.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 1</span><p>Ross y Rachel lidian con la boda en Las Vegas.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 9</span><p>Ross se muda con Chandler y Joey.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Chandler le pide matrimonio a Monica.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/JVZMcBoEhT4" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 7 -->
+<div id="modal-temp7" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp7')">&times;</span>
+    <h2>Temporada 7 - Momentos importantes</h2>
+    <p>La preparación de la boda de Monica y Chandler domina la temporada.</p>
+    <h3>Línea de tiempo</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 1</span><p>Monica y Chandler anuncian su compromiso.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 10</span><p>Rachel revela que está embarazada.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Boda de Monica y Chandler.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/TI4TJagzvEE" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 8 -->
+<div id="modal-temp8" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp8')">&times;</span>
+    <h2>Temporada 8 - Momentos importantes</h2>
+    <p>El embarazo de Rachel y la evolución de las relaciones marcan esta temporada.</p>
+    <h3>Línea de tiempo</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 1</span><p>Rachel confirma su embarazo.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 9</span><p>Ross y Rachel consideran su futuro juntos.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Nace Emma, la hija de Ross y Rachel.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/jDV40u1g8PM" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 9 -->
+<div id="modal-temp9" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp9')">&times;</span>
+    <h2>Temporada 9 - Momentos importantes</h2>
+    <p>Las relaciones se complican y se acercan al desenlace de la serie.</p>
+    <h3>Línea de tiempo</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 3</span><p>Rachel y Joey exploran sus sentimientos.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 12</span><p>Monica y Chandler consideran adoptar.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Rachel recibe una oferta de trabajo en París.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/p2C6rAno59I?start=27" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Temporada 10 -->
+<div id="modal-temp10" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('temp10')">&times;</span>
+    <h2>Temporada 10</h2>
+    <p>La temporada final cierra las historias de los seis amigos.</p>
+    <h3>Línea de tiempo - Momentos importantes</h3>
+    <div class="timeline">
+      <div class="timeline-item"><span class="episode">Episodio 1</span><p>Monica y Chandler avanzan con la adopción.</p></div>
+      <div class="timeline-item"><span class="episode">Episodio 16</span><p>Rachel se prepara para mudarse a París.</p></div>
+      <div class="timeline-item"><span class="episode">Final</span><p>Los seis amigos dejan el departamento, juntos por última vez.</p></div>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/jaXJSq5JDFM" frameborder="0" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sección de Mejores Episodios -->
+<section class="episodios-scroll">
+  <h2>📺 Mejores Episodios</h2>
+  <div class="cards-container">
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep1')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvASkDchdUYF_JMJYmXePljVwtN8aTGlPE1g&s" alt="The One Where Everybody Finds Out"><h3>The One Where Everybody Finds Out</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep2')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDn1Ut4cT06bLHpC9PL2jlZaVWeDxtxVbLUw&s" alt="The Last One"><h3>The Last One</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep3')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy-kvm29ToONhdi-dhfFoaZIY2j6ZcmydHw&s" alt="The One With The Proposal"><h3>The One With The Proposal</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep4')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYZOeE91pHD67GlhzKf_iw4xt9-qrQKOjzQ&s" alt="The One With Ross's Sandwich"><h3>The One With Ross's Sandwich</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep5')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0IqH7NOq0kRNWlovxs-hfIeDkLH_lCoA2wg&s" alt="The One With The Cop"><h3>The One With The Cop</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep6')"><img src="https://m.media-amazon.com/images/M/MV5BMTM4ODYyOTE0OV5BMl5BanBnXkFtZTgwNTIyODU0MDE@._V1_.jpg" alt="The One With The Embryos"><h3>The One With The Embryos</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep7')"><img src="https://m.media-amazon.com/images/M/MV5BMTcwOTE0NjQ1NV5BMl5BanBnXkFtZTgwNDg2MDY0MDE@._V1_.jpg" alt="The One With All The Thanksgivings"><h3>The One With All The Thanksgivings</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep8')"><img src="https://m.media-amazon.com/images/M/MV5BMTY0OTE1Njc4OF5BMl5BanBnXkFtZTgwMzk4MjU0MDE@._V1_.jpg" alt="The One Where Ross Got High"><h3>The One Where Ross Got High</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep9')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBi0A_AfwwsVzCSdFm1jpglJzNN0YLs6e8sQ&s" alt="The One With Chandler In A Box"><h3>The One With Chandler In A Box</h3></a></div>
+    <div class="card"><a href="javascript:void(0)" onclick="openModal('ep10')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMeV4yfDqehyUrEtShJFTLStqq6uRMIqvFFQ&s" alt="The One With Unagi"><h3>The One With Unagi</h3></a></div>
+  </div>
+  <p class="nota">Tocá en cada tarjeta para ver de qué trata el episodio y ver algunas escenas icónicas.</p>
+</section>
+
+<!-- Modales de Episodios -->
+<div id="modal-ep1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep1')">&times;</span>
+  <h2>The One Where Everybody Finds Out</h2>
+  <p>Temporada 5, Episodio 14. Phoebe descubre la relación secreta de Monica y Chandler y comienza un divertido juego de seducción que termina con todos enterándose.</p>
+  <div class="gallery"><img src="https://decider.com/wp-content/uploads/2014/07/tumblr_n8ii1rikay1tcvk1no1_1280.png?w=1056" alt="Phoebe descubre la relación"><img src="https://m.media-amazon.com/images/M/MV5BMGQ1YTdhMTctOTk5Yi00ZjZkLTlhNDQtNWQ1NDg3ZjgyZjA1XkEyXkFqcGc@._V1_.jpg" alt="Juego de seducción"></div>
+</div></div>
+
+<div id="modal-ep2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep2')">&times;</span>
+  <h2>The Last One</h2>
+  <p>Temporada 10, Episodios 17-18. El final de la serie: Rachel está por irse a París, Monica y Chandler se convierten en padres y el grupo se despide del departamento.</p>
+  <div class="gallery"><img src="https://m.media-amazon.com/images/M/MV5BYTk0NzU0ZTAtNTMwNy00MTczLTkzMjQtMzgzYjRmNzliYmJlXkEyXkFqcGc@._V1_.jpg" alt="Ultimas escenas en el departamento"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf_TKOIRUhxdeGqj3fuTAdOoj6VauU6-RlIA&s" alt="Última escena en el departamento"></div>
+</div></div>
+
+<div id="modal-ep3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep3')">&times;</span>
+  <h2>The One With The Proposal</h2>
+  <p>Temporada 6, Episodios 24-25. Chandler intenta sorprender a Monica con una propuesta de matrimonio, pero ella termina proponiéndole a él.</p>
+  <div class="gallery"><img src="https://i.ytimg.com/vi/Y-M3CrPzI5A/maxresdefault.jpg" alt="Chandler preparando la propuesta"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YGrmB0wcyU7HU3_OxP3QU_EeDKuC8SXF9w&s" alt="Monica y Chandler comprometiéndose"></div>
+</div></div>
+
+<div id="modal-ep4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep4')">&times;</span>
+  <h2>The One With Ross's Sandwich</h2>
+  <p>Temporada 5, Episodio 9. Ross pierde la paciencia cuando su jefe se come su sándwich de Acción de Gracias.</p>
+  <div class="gallery"><img src="https://m.media-amazon.com/images/M/MV5BN2FjNjNmYjUtODk1MC00ZWIwLWFlNGYtZTRhOWE2MWRhZWYwXkEyXkFqcGc@._V1_.jpg" alt="Ross gritando My sandwich"><img src="https://m.media-amazon.com/images/M/MV5BZTYyZmIwYjItZDNhYi00YjhhLThkZTAtMWNjMDlkZTQwM2Q5XkEyXkFqcGc@._V1_.jpg" alt="Joey sorprendido"> </div>
+</div></div>
+
+<div id="modal-ep5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep5')">&times;</span>
+  <h2>The One With The Cop</h2>
+  <p>Temporada 5, Episodio 16. Ross intenta subir un sofá por las escaleras y grita “Pivot!”, mientras Joey estrena su famosa frase “How you doin’?”.</p>
+  <div class="gallery"><img src="https://m.media-amazon.com/images/M/MV5BMDI5ODE5ZjUtY2YzMC00NDAzLTlhMWItODQwMjg1NWNlYjRlXkEyXkFqcGc@._V1_.jpg" alt="Subiendo sofa"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvofFNimk9vqxJENpZbuHWpp0g2GsDPjGzA&s" alt="Joey diciendo How you doin"></div>
+</div></div>
+
+<div id="modal-ep6" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep6')">&times;</span>
+  <h2>The One With The Embryos</h2>
+  <p>Temporada 4, Episodio 12. El juego de trivia entre los chicos termina con Monica y Rachel perdiendo el departamento frente a Joey y Chandler.</p>
+  <div class="gallery"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/21/21/asset/348ba8bac7a5/sub-buzz-19406-1600725523-9.png?downsize=700%3A%2A&output-quality=auto&output-format=auto" alt="Juego de trivia"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN943IAM2GIjesSmVGxokaw6FAW9ja9UN8OA&s" alt="Todos prestan atencion"></div>
+</div></div>
+
+<div id="modal-ep7" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep7')">&times;</span>
+  <h2>The One With All The Thanksgivings</h2>
+  <p>Temporada 5, Episodio 8. Flashbacks de los peores Thanksgivings, incluyendo el icónico momento en que Monica se pone un pavo en la cabeza.</p>
+  <div class="gallery"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLrOrxqYIhJA98mbY08M0XP2EefSfiYqi7g&s" alt="Monica con el pavo en la cabeza"><img src="https://m.media-amazon.com/images/M/MV5BMTQzNTVkYzQtMzFmNy00MGNhLTk4ZTktZTM5ZDBkZjQ2ZjRiXkEyXkFqcGc@._V1_.jpg" alt="Todos mirando por la puerta"></div>
+</div></div>
+
+<div id="modal-ep8" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep8')">&times;</span>
+  <h2>The One Where Ross Got High</h2>
+  <p>Temporada 6, Episodio 9. Durante una cena de Acción de Gracias, se revelan secretos familiares y Rachel prepara un postre con carne.</p>
+  <div class="gallery"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuce6NxojqS4yFr6MmDPTW9yMj7EyhL_rXqw&s" alt="Rachel cocinando"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQccuRj1nehp1C755Iw6uG7j9_icW69giEL5A&s" alt="Monica comiendo"></div>
+</div></div>
+
+<div id="modal-ep9" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ep9')">&times;</span>
+  <h2>The One With Chandler In A Box</h2>
+  <p>Temporada 4, Episodio 8. Chandler se mete en una caja como castigo por besar a la ex de Joey.</p>
+  <div class="gallery"><img src="https://m.media-amazon.com/images/M/MV5BMjM0NDc1MDY3NV5BMl5BanBnXkFtZTgwMzIyODU0MDE@._V1_.jpg" alt="Todos mirando por el balcon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0eHzfanHgOsCy90TFXbOztFWutl449Py2MA&s" alt="Chandler y Joey"></div>
+</div></div>
+
+<div id="modal-ep10" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('ep10')">&times;</span>
+    <h2>The One With Unagi</h2>
+    <p>Temporada 6, Episodio 17. Ross intenta enseñar a Rachel y Phoebe sobre “Unagi”, su concepto de alerta total. Ellas se burlan y lo sorprenden, creando uno de los momentos más divertidos de la serie.</p>
+    <div class="gallery"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm1fK5-WZ7ipbaAbmf5YkM0vzqMK2XXeq5g&s" alt="Ross diciendo Unagi con cara seria"> <img src="https://m.media-amazon.com/images/M/MV5BYjAxMTIwYWQtNjA2NS00ZWU1LTg4YzgtNTExMjljOTE2MTdhXkEyXkFqcGc@._V1_.jpg" alt="Rachel unagi"></div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+  <p>Derechos reservados © 2025 - Fan Page Friends</p>
+</footer>
+
+<script src="funciones.js"></script>
+<script src="menu.js"></script>
+
+   <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash; // ej: "#ross"
+  if (hash) {
+    const temporada = hash.substring(1); // "ross"
+    const modal = document.getElementById('modal-' + temporada);
+    if (modal) {
+      modal.classList.add('show');
+    }
+  }
+});
+</script>
+
+</body>
+</html>

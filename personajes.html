@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes - Friends Fan Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menú superior -->
+<header>
+  <div class="logo">Friends Fan Page</div>
+  <button class="menu-btn" aria-label="Abrir menú">☰</button>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="personajes.html" class="active">Personajes</a></li>
+      <li><a href="temporadas.html">Temporadas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Título -->
+  <section class="banner">
+    <h1>Personajes principales</h1>
+    <p>Conocé más sobre los protagonistas de Friends y sus momentos inolvidables.</p>
+  </section>
+
+  <!-- Cards de personajes -->
+  <main>
+    <div class="cards-grid">
+
+      <!-- Ross -->
+      <div class="card">
+        <img src="img/ross.geller.jpg" alt="Ross Geller">
+        <h3>Ross Geller</h3>
+        <p>Paleontólogo, hermano de Monica. Inteligente y algo torpe, su relación con Rachel es central.</p>
+        <span class="frase">“We were on a break!”</span>
+        <button class="btn" onclick="openModal('ross')">Ver más</button>
+      </div>
+
+      <!-- Rachel -->
+      <div class="card">
+        <img src="img/rachel.green.jpg" alt="Rachel Green">
+        <h3>Rachel Green</h3>
+        <p>De camarera en Central Perk a trabajar en moda. Su historia con Ross es inolvidable.</p>
+        <span class="frase">“It’s like all my life everyone has always told me, ‘You’re a shoe!’”</span>
+        <button class="btn" onclick="openModal('rachel')">Ver más</button>
+      </div>
+
+      <!-- Monica -->
+      <div class="card">
+        <img src="img/monica.jpg" alt="Monica Geller">
+        <h3>Monica Geller</h3>
+        <p>Chef perfeccionista y amante del orden. Hermana de Ross y anfitriona del grupo.</p>
+        <span class="frase">“Welcome to the real world. It sucks. You’re gonna love it!”</span>
+        <button class="btn" onclick="openModal('monica')">Ver más</button>
+      </div>
+
+      <!-- Chandler -->
+      <div class="card">
+        <img src="img/chandler.jpg" alt="Chandler Bing">
+        <h3>Chandler Bing</h3>
+        <p>Conocido por su sarcasmo y humor, trabaja en análisis de datos y es inseparable de Joey.</p>
+        <span class="frase">“I’m not great at advice. Can I interest you in a sarcastic comment?”</span>
+        <button class="btn" onclick="openModal('chandler')">Ver más</button>
+      </div>
+
+      <!-- Joey -->
+      <div class="card">
+        <img src="img/joey.jpg" alt="Joey Tribbiani">
+        <h3>Joey Tribbiani</h3>
+        <p>Actor en busca de fama, ingenuo pero encantador. Su frase icónica es inolvidable.</p>
+        <span class="frase">“How you doin’?”</span>
+        <button class="btn" onclick="openModal('joey')">Ver más</button>
+      </div>
+
+      <!-- Phoebe -->
+      <div class="card">
+        <img src="img/phoebe.jpg" alt="Phoebe Buffay">
+        <h3>Phoebe Buffay</h3>
+        <p>Excéntrica y divertida, toca la guitarra en Central Perk. Sus canciones y personalidad son únicas.</p>
+        <span class="frase">“Smelly Cat, Smelly Cat, what are they feeding you?”</span>
+        <button class="btn" onclick="openModal('phoebe')">Ver más</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modales -->
+<!-- Ross -->
+<div id="modal-ross" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('ross')">&times;</span>
+    <h2>Ross Geller</h2>
+    <img src="img/ross.geller.jpg" alt="Ross Geller">
+    <p>Paleontólogo y profesor universitario. Hermano de Monica, obsesivo y algo torpe, su relación con Rachel es central.</p>
+    <p class="frase">“We were on a break!”</p>
+    <h3>Momentos icónicos</h3>
+    <ul>
+      <li>El desastre con los pantalones de cuero.</li>
+      <li>El “armadillo navideño”.</li>
+      <li>Su obsesión con el “Unagi”.</li>
+    </ul>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/VwMhgN0GtUc" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</div>
+
+<!-- Rachel -->
+<div id="modal-rachel" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('rachel')">&times;</span>
+    <h2>Rachel Green</h2>
+    <img src="img/rachel.green.jpg" alt="Rachel Green">
+    <p>De camarera en Central Perk a ejecutiva de moda. Evoluciona de insegura a independiente y decidida.</p>
+    <p class="frase">“It’s like all my life everyone has always told me, ‘You’re a shoe!’”</p>
+    <h3>Momentos icónicos</h3>
+    <ul>
+      <li>Su entrada vestida de novia en el piloto.</li>
+      <li>El corte de pelo “The Rachel”.</li>
+      <li>“I got off the plane.”</li>
+    </ul>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/ky3KiiUK_D0" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Monica -->
+<div id="modal-monica" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('monica')">&times;</span>
+    <h2>Monica Geller</h2>
+    <img src="img/monica.jpg" alt="Monica Geller">
+    <p>Chef perfeccionista y competitiva. Hermana de Ross y anfitriona del grupo.</p>
+    <p class="frase">“Welcome to the real world. It sucks. You’re gonna love it!”</p>
+    <h3>Momentos icónicos</h3>
+    <ul>
+      <li>El pavo en la cabeza con gafas de sol.</li>
+      <li>Su relación secreta con Chandler en Londres.</li>
+      <li>Su obsesión por ganar en juegos.</li>
+    </ul>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/nEwfSZfz7pw" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+    </div>
+</div>
+
+<!-- Chandler -->
+<div id="modal-chandler" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('chandler')">&times;</span>
+    <h2>Chandler Bing</h2>
+    <img src="img/chandler.jpg" alt="Chandler Bing">
+    <p>Sarcástico y divertido, trabaja en análisis de datos. Inseguro pero con gran corazón.</p>
+    <p class="frase">“I’m not great at advice. Can I interest you in a sarcastic comment?”</p>
+    <h3>Momentos icónicos</h3>
+    <ul>
+      <li>Su frase: “Could I BE any more…?”</li>
+      <li>Su propuesta a Monica rodeado de velas.</li>
+      <li>El baile incómodo en la boda.</li>
+    </ul>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/ZPDyn7m6Ous" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+</div>
+</div>
+
+<!-- Joey -->
+<div id="modal-joey" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('joey')">&times;</span>
+    <h2>Joey Tribbiani</h2>
+    <img src="img/joey.jpg" alt="Joey Tribbiani">
+    <p>Actor en busca de fama, ingenuo pero encantador. Amante de la comida y las mujeres.</p>
+    <p class="frase">“How you doin’?”</p>
+    <h3>Momentos icónicos</h3>
+    <ul>
+      <li>Se pone toda la ropa de Chandler.</li>
+      <li>Su papel como Dr. Drake Ramoray.</li>
+      <li>Su amor por la pizza y “Mujercitas”.</li>
+    </ul>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/_4WxoTeaMZM" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+</div>
+</div>
+
+<!-- Phoebe -->
+<div id="modal-phoebe" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('phoebe')">&times;</span>
+    <h2>Phoebe Buffay</h2>
+    <img src="img/phoebe.jpg" alt="Phoebe Buffay">
+    <p>Excéntrica y divertida, toca la guitarra en Central Perk. Espiritual y leal.</p>
+    <p class="frase">“Smelly Cat, Smelly Cat, what are they feeding you?”</p>
+    <h3>Momentos icónicos</h3>
+    <ul>
+      <li>Su canción “Smelly Cat”.</li>
+      <li>Descubre la relación de Monica y Chandler.</li>
+      <li>Su boda en la nieve con Mike.</li>
+    </ul>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/N3IV7ZJkmj0" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+</div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Derechos reservados © 2025 - Fan Page Friends</p>
+  </footer>
+
+
+   <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash; // ej: "#ross"
+  if (hash) {
+    const personaje = hash.substring(1); // "ross"
+    const modal = document.getElementById('modal-' + personaje);
+    if (modal) {
+      modal.classList.add('show');
+    }
+  }
+});
+</script>
+
+<script src="funciones.js"></script>
+<script src="menu.js"></script>
+
+</body>
+</html>

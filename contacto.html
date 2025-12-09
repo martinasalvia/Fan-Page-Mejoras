@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Friends Fan Page</title>
+  <link rel="stylesheet" href=" style.css">
+</head>
+<body>
+
+  <!-- Menú superior -->
+<header>
+  <div class="logo">Friends Fan Page</div>
+  <button class="menu-btn" aria-label="Abrir menú">☰</button>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="personajes.html">Personajes</a></li>
+      <li><a href="temporadas.html">Temporadas</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Sección de Contacto -->
+  <section class="contacto">
+    <h2>📩 Contacto</h2>
+    <p>¿Tenés dudas, sugerencias o querés compartir tu momento favorito de Friends? Completá el formulario y te responderemos.</p>
+
+    <form id="contactForm" class="contact-form" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Tema del mensaje" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+
+      <!-- Cartel de confirmación oculto -->
+      <div id="mensajeConfirmacion" class="mensaje-confirmacion">
+        ¡Gracias por tu mensaje! 💌
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Derechos reservados © 2025 - Fan Page Friends</p>
+  </footer>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const mensaje = document.getElementById('mensajeConfirmacion');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // evita que el navegador cambie de página
+    mensaje.style.display = 'block'; // muestra el cartel
+    form.reset(); // limpia los campos
+
+    // opcional: ocultar el cartel después de 5 segundos
+    setTimeout(() => {
+      mensaje.style.display = 'none';
+    }, 5000);
+  });
+</script>
+
+<script src="menu.js"></script>
+</body>
+</html>

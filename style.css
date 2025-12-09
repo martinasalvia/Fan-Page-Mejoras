@@ -1,0 +1,848 @@
+/* -------------------- BASE -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --friends-orange: #FF4500;
+  --friends-yellow: #FFD700;
+  --friends-blue: #1E90FF;
+  --friends-purple: #8A2BE2;
+  --friends-black: #1c1c1c;
+  --friends-white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--friends-black);
+  color: var(--friends-white);
+  line-height: 1.6;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  background: #222;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+
+/* -------------------- NAV -------------------- */
+header {
+  background-color: var(--friends-black);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 32px; }
+.main-nav a { text-decoration: none; color: var(--friends-yellow); font-weight: 600; transition: color 0.3s; font-size: 1.1rem; padding: 8px 12px; }
+.main-nav a:hover { color: var(--friends-orange); }
+.main-nav a.active { color: var(--friends-orange); border-bottom: 2px solid var(--friends-orange); padding-bottom: 4px; }
+.main-nav a.active:hover { color: var(--friends-yellow); }
+
+.logo {
+  color: var(--friends-yellow);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+}
+
+/* -------------------- MENÚ MÓVIL -------------------- */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--friends-yellow);
+  padding: 8px;
+  margin-left: auto; /* empuja a la derecha */
+}
+
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--friends-yellow);
+  padding: 8px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+/* -------------------- BANNER -------------------- */
+.banner {
+  position: relative;
+  background: url('img/banner1.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 120px 20px;
+  color: var(--friends-white);
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.banner h1,
+.banner p {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--friends-yellow);
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* -------------------- DESCRIPCIÓN -------------------- */
+.descripcion {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.descripcion h2 {
+  color: var(--friends-orange);
+  margin-bottom: 16px;
+}
+
+.descripcion p {
+  color: #eee;
+  font-size: 1rem;
+}
+
+.spoiler {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* -------------------- FOTO + TEXTO -------------------- */
+.foto-explicacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.foto-explicacion img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.foto-explicacion .texto {
+  max-width: 500px;
+}
+
+.foto-explicacion h2 {
+  color: var(--friends-blue);
+  margin-bottom: 12px;
+}
+
+.foto-explicacion p {
+  color: #ddd;
+}
+
+/* -------------------- PERSONAJES SCROLL -------------------- */
+.personajes-scroll {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+.personajes-scroll h2 {
+  text-align: center;
+  color: var(--friends-purple);
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 200px;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  scroll-snap-align: start;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: var(--friends-yellow);
+  font-size: 1.1rem;
+}
+
+.nota {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* -------------------- TEMPORADAS SCROLL -------------------- */
+.temporadas-scroll {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+.temporadas-scroll h2 {
+  text-align: center;
+  color: var(--friends-blue);
+  margin-bottom: 20px;
+}
+
+.temporadas-scroll .cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.temporadas-scroll .card {
+  flex: 0 0 200px;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+
+.temporadas-scroll .card:hover {
+  transform: translateY(-5px);
+}
+
+.temporadas-scroll .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.temporadas-scroll .card h3 {
+  color: var(--friends-yellow);
+  font-size: 1.1rem;
+}
+
+/* -------------------- PERSONAJES GRID (Página personajes) -------------------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+.cards-grid .card {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s, background 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-grid .card:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+.cards-grid .card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.cards-grid .card h3 {
+  color: var(--friends-yellow);
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.cards-grid .card p {
+  font-size: 0.95rem;
+  color: #eee;
+  margin-bottom: 12px;
+}
+
+.cards-grid .card .frase {
+  display: block;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--friends-orange);
+  margin-bottom: 12px;
+}
+
+/* -------------------- BOTONES -------------------- */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--friends-yellow);
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(150deg, var(--friends-yellow), var(--friends-orange));
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background: #222;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+
+/* -------------------- MODALES PERSONAJES -------------------- */
+/* Contenedor del modal: con aire arriba/abajo y scroll general */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+
+  /* Espacio vertical visible */
+  padding: 60px 20px;
+
+  /* Si el contenido supera la pantalla, permite el scroll del overlay */
+  overflow-y: auto;
+}
+
+.modal.show {
+  display: flex;
+}
+
+/* Caja del modal: tamaño generoso y scroll interno si hace falta */
+.modal-content {
+  background: #222;
+  color: var(--friends-white);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 700px;
+  padding: 36px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  position: relative;
+
+  /* Mantener aire superior e inferior incluso con contenido largo */
+  max-height: calc(100vh - 120px); /* 120px = 60px arriba + 60px abajo */
+  overflow-y: auto; /* scroll interno del contenido */
+}
+
+
+/* Tipografía y medios */
+.modal-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: var(--friends-yellow);
+}
+
+.modal-content img {
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+}
+
+
+
+.modal-content p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 12px;
+}
+
+.modal-content .frase {
+  font-style: italic;
+  color: var(--friends-orange);
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.modal-content video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Cerrar */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: var(--friends-yellow);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.close:hover { transform: scale(1.2); color: var(--friends-orange); }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-top: 16px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+
+
+/* TEMPORADAS y EPISODIOS */
+/* Separación y estructura de la sección de episodios */
+.episodios-scroll {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px solid #f7ca18;
+}
+
+/* Tarjetas de episodios (idénticas visualmente, pero sin pisar las de temporadas) */
+.episodios-scroll .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.episodios-scroll .card {
+  width: 200px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.episodios-scroll .card:hover {
+  transform: scale(1.05);
+}
+
+.episodios-scroll .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.episodios-scroll .card h3 {
+  text-align: center;
+  padding: 12px;
+  color: #f7ca18;
+  font-size: 1.1rem;
+}
+
+/* Nota informativa */
+.episodios-scroll .nota {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.episodios-scroll .card img {
+  width: 100%;
+  height: 180px; /* altura fija para todas */
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+/* Modales de episodios (solo ajustes internos si hace falta, sin redefinir el modal global) */
+#modal-ep1 .modal-content,
+#modal-ep2 .modal-content,
+#modal-ep3 .modal-content {
+  /* Si tu modal ya está estilizado globalmente, podés omitir esto */
+  background: #222;
+  color: #fff;
+  border-radius: 16px;
+  padding: 36px;
+}
+
+/* Galería de fotos dentro de los modales de episodios */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* TEMPORADAS - Línea de tiempo */
+.timeline {
+  border-left: 3px solid #f7ca18; /* amarillo estilo Friends */
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #e67e22; /* naranja estilo Friends */
+  border-radius: 50%;
+}
+
+.timeline-item .episode {
+  font-weight: bold;
+  color: #f7ca18;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.card a,
+.card h3,
+.episodios-scroll .card a,
+.episodios-scroll .card h3 {
+  text-decoration: none;
+}
+
+
+
+/* CONTACTO */
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.contacto h2 {
+  text-align: center;
+  color: #f7ca18;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.contact-form .form-group {
+  margin-bottom: 16px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #f7ca18;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #f7ca18;
+}
+
+.btn-enviar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #f7ca18;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: #e67e22;
+}
+
+.mensaje-confirmacion {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #2ecc71; /* verde éxito */
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablets y pantallas medianas (≤1024px) */
+@media (max-width: 1024px) {
+  .navbar ul { gap: 24px; }
+  .banner { padding: 100px 20px; }
+  .banner h1 { font-size: 2.6rem; }
+  .cards-grid { max-width: 1000px; }
+  .personajes-scroll,
+  .temporadas-scroll { max-width: 1000px; }
+}
+
+/* Desktop amplio: 3 columnas en grilla */
+@media (min-width: 993px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets y móviles grandes (≤768px) */
+@media (max-width: 768px) {
+  header { padding: 16px 16px; }
+  .navbar a { font-size: 1rem; padding: 6px 10px; }
+
+  .banner { padding: 80px 20px; }
+  .banner h1 { font-size: 2.2rem; }
+  .banner p { font-size: 1rem; }
+
+  .descripcion { margin: 28px auto; padding: 16px; }
+
+  .foto-explicacion { flex-direction: column; gap: 20px; margin: 40px auto; }
+  .foto-explicacion img { width: 80%; max-width: 360px; }
+
+  .cards-container { gap: 16px; }
+  .card { flex: 0 0 180px; padding: 12px; }
+  .card img { height: 200px; }
+
+  .cards-grid { gap: 20px; padding: 28px 16px; }
+  .cards-grid .card img { height: 240px; }
+
+  /* Ajustes de Personajes */
+  .personajes-scroll .card {
+    flex: 0 0 140px;
+    padding: 10px;
+  }
+  .personajes-scroll .card img {
+    height: 160px;
+    object-fit: cover;
+  }
+  .personajes-scroll .card h3 {
+    font-size: 0.95rem;
+  }
+
+  /* Ajustes de modales */
+  .modal { padding: 40px 16px; }
+  .modal-content {
+    max-width: 90%;
+    padding: 24px;
+    max-height: calc(100vh - 80px);
+  }
+  .modal-content h2 { font-size: 1.6rem; }
+  .modal-content p,
+  .modal-content .frase { font-size: 0.95rem; }
+  .close { font-size: 1.6rem; }
+}
+
+/* Móviles pequeños (≤480px) */
+@media (max-width: 480px) {
+  header { padding: 14px 14px; }
+  .navbar ul { gap: 16px; }
+  .navbar a { font-size: 0.95rem; padding: 6px 8px; }
+
+  .banner { padding: 60px 16px; }
+  .banner h1 { font-size: 1.8rem; }
+  .banner p { font-size: 0.95rem; }
+
+  .cards-container { gap: 12px; }
+  .card { flex: 0 0 160px; }
+  .card img { height: 180px; }
+
+  .cards-grid { gap: 16px; padding: 24px 14px; }
+  .cards-grid .card img { height: 200px; }
+
+  footer { padding: 16px; margin-top: 32px; }
+
+  /* Personajes aún más compactos */
+  .personajes-scroll .card {
+    flex: 0 0 120px;
+    padding: 8px;
+  }
+  .personajes-scroll .card img {
+    height: 140px;
+  }
+  .personajes-scroll .card h3 {
+    font-size: 0.85rem;
+  }
+
+  /* Modales más compactos */
+  .modal-content {
+    padding: 20px;
+    max-width: 95%;
+  }
+  .modal-content h2 { font-size: 1.4rem; }
+  .modal-content p,
+  .modal-content .frase { font-size: 0.9rem; }
+  .close { font-size: 1.4rem; }
+}
+
+/* Responsive: convierte el ul en panel lateral y usa la clase "activo" */
+@media (max-width: 768px) {
+  .menu-btn { display: block; }
+
+  .main-nav ul {
+    display: none;            /* oculto por defecto en móvil */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -260px;            /* fuera de pantalla */
+    width: 260px;
+    height: 100%;
+    background: #222;
+    padding: 60px 20px;
+    gap: 16px;
+    box-shadow: -12px 0 24px rgba(0,0,0,0.4);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .main-nav ul.activo {
+    display: flex;
+    right: 0;                 /* entra con slide-in */
+  }
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    display: block;
+  }
+}
